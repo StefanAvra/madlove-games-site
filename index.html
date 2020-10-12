@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLove Games</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    </script>
+
+</head>
+
+<body onload="typeWriter()">
+    <div class="uk-container uk-container-expand uk-light"
+        uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="#top" class="uk-navbar-item uk-logo" uk-scroll>
+                    <img id="logo" class="uk-logo-inverse uk-display-block-inline" src="img/MadLove_Logo.png"
+                        alt="MadLove Games">
+                </a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <!-- <li><a href="#top" uk-scroll>Home</a></li> -->
+                    <li><a href="#projects" uk-scroll>Projects</a></li>
+                    <li><a href="#about" uk-scroll>About</a></li>
+                    <li><a href="#contact" uk-scroll>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="uk-container uk-container-small uk-padding-large uk-light">
+        <div uk-height-viewport="offset-top: true" class="uk-padding-large">
+            <h1 id="typewriter-heading" class="uk-heading-medium uk-text-middle crt"></h1>
+        </div>
+        <div id="projects" class="uk-padding-large" uk-height-viewport="offset-top: true">
+            <div class="project uk-padding uk-padding-remove-horizontal">
+                <h2 class="uk-heading-medium">MadLove - The Game</h1>
+                    <div class="uk-position-relative uk-visible-toggle uk-light uk-padding uk-padding-remove-horizontal"
+                        tabindex="-1" uk-slideshow>
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <iframe
+                                    src="https://www.youtube.com/embed/CY5pmC3nwCw?autoplay=1&controls=0&rel=0&loop=1&modestbranding=1&playlist=CY5pmC3nwCw&wmode=transparent&playsinline=1"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    width="1920" height="1080" frameborder="0" allowfullscreen uk-cover></iframe>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                            uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                            uk-slideshow-item="next"></a>
+
+                    </div>
+                    <div uk-lightbox>
+                        <a class="uk-button uk-button-default"
+                            href="https://www.youtube.com/watch?v=CY5pmC3nwCw">Teaser</a>
+                        <a class="uk-button uk-button-default"
+                            href="https://www.youtube.com/watch?v=xZfmd22iUY8">Gameplay Video</a>
+                    </div>
+                    <p class="uk-text-lead">Where it all began</p>
+                    <p>In 2018 Gurkiman posted a short animation of a breakout-style video game in which a lung was
+                        destroyed by a cigarette. When
+                        Avra
+                        asked him if this game was real, he replied <span class="uk-text-italic">"of course not"</span>.
+                        That's when the idea was born.
+                        After a
+                        quick <a href="https://stefanavra.github.io/kill-yo-lungs-js/">prototype</a> we decided to make
+                        a real arcade game.
+                    </p>
+                    <p>
+                        The original MadLove Game comes with a custom built 80s style arcade cabinet with a real CRT
+                        monitor,
+                        arcade buttons and stick. And of course it is coin operated. Seasoned players are able to
+                        enter their name on the top 10 high scores list.<br>Avra developed the game in Python using
+                        Pygame. It features graphics by Gurkiman and Music by <a
+                            href="https://open.spotify.com/artist/7tuhz1Gz9N1ImIc8eJsqiY?si=Xa245rXlTleoGVKgVv9vcA">Ozzed</a>.<br>
+                        The project premiered at the Rundgang of the State Academy of Fine Arts Stuttgart 19th - 21st of
+                        July 2019.
+                        In addition, the game was displayed in two bars in Stuttgart and was also playable in Dresden at
+                        a festival. The local press reported about the project. (<a
+                            href="https://www.stadtkind-stuttgart.de/ein-spielautomat-wandert-durch-stuttgarter-bars/"
+                            target="_blank" rel="noopener noreferrer">Stadtkind Stuttgart</a>, <a
+                            href="https://www.tagblatt.de/Nachrichten/In-Level-1-wird-die-Lunge-pulverisiert-427241.html"
+                            target="_blank" rel="noopener noreferrer">Tagblatt</a>)
+                    </p>
+                    <p>
+                        Game Design by Gurkiman & Avra <br>
+                        Programmed by Avra, Code published under MIT License <a
+                            href="https://github.com/StefanAvra/madlove/" target="_blank"
+                            rel="noopener noreferrer"><span uk-icon="github"></span></a><br>
+                        Graphic Design by Gurkiman
+                    </p>
+            </div>
+        </div>
+        <div id="about" class="uk-padding-large" >
+            <!-- <h2 class="uk-heading-medium uk-padding"></h2> -->
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <div class="uk-width-1-2@m">
+
+                    <div class="uk-card uk-card-secondary uk-light">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40"
+                                        src="https://avatars0.githubusercontent.com/u/18117169?s=460&u=0bd3ad45d8168333b820dd75d19be38b74e8a24d&v=4">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Stefan 'Avra' Avramescu</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">Developer</time></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p>I'm responsible for the tech and game design.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="https://github.com/StefanAvra" target="_blank"
+                                class="uk-button uk-button-text">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div class="uk-card uk-card-secondary uk-light">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <!-- <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                                </div> -->
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom">Christian 'Gurkiman' Angele</h3>
+                                    <p class="uk-text-meta uk-margin-remove-top">Designer</time></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <p>I'm in charge of the graphics, concept and game design.</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <a href="https://www.instagram.com/gurkiman/" target="_blank"
+                                class="uk-button uk-button-text">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="uk-padding-large" uk-height-viewport="offset-top: true">
+            <h2 class="uk-heading-medium">Write us</h2>
+
+            <span uk-icon="icon: mail; ratio: 2"></span> <a data-name="hello" data-domain="madlove" data-tld="games" href="#" class="cryptedmail"
+                onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
+        </div>
+    </div>
+    <div id="footer"
+        class="uk-light uk-container-expand uk-align-center uk-padding-remove-bottom uk-margin-remove-bottom">
+        <a href="#modal-center" class="uk-button uk-text-meta uk-align-center uk-margin-remove-bottom"
+            uk-toggle>Impressum / Datenschutz</a>
+        <div id="modal-center" class="uk-flex-top uk-light" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-text-small modal-black">
+
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <h5>Impressum</h5>
+                <p id="imprint">Stefan Avramescu <br><a data-name="hello" data-domain="madlove" data-tld="games" href="#" class="cryptedmail"
+                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
+                </p>
+
+                <h5>Datenschutzerklärung</h1>
+                    <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung
+                        (DSGVO), ist:</p>
+                    <p>Stefan Avramescu <br>
+                        <a data-name="hello" data-domain="madlove" data-tld="games" href="#" class="cryptedmail"
+                            onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
+                    </p>
+                    <h5>Ihre Betroffenenrechte</h5>
+                    <p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende
+                        Rechte ausüben:</p>
+                    <ul>
+                        <li>Auskunft über Ihre bei uns gespeicherten Daten und deren Verarbeitung (Art. 15 DSGVO),</li>
+                        <li>Berichtigung unrichtiger personenbezogener Daten (Art. 16 DSGVO),</li>
+                        <li>Löschung Ihrer bei uns gespeicherten Daten (Art. 17 DSGVO),</li>
+                        <li>Einschränkung der Datenverarbeitung, sofern wir Ihre Daten aufgrund gesetzlicher Pflichten
+                            noch
+                            nicht löschen dürfen (Art. 18 DSGVO),</li>
+                        <li>Widerspruch gegen die Verarbeitung Ihrer Daten bei uns (Art. 21 DSGVO) und</li>
+                        <li>Datenübertragbarkeit, sofern Sie in die Datenverarbeitung eingewilligt haben oder einen
+                            Vertrag
+                            mit uns abgeschlossen haben (Art. 20 DSGVO).</li>
+                    </ul>
+                    <p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die
+                        Zukunft widerrufen.</p>
+                    <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die
+                        zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als
+                        verantwortliche
+                        Stelle zuständige Behörde.</p>
+                    <p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie
+                        unter:
+                        <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
+                            target="_blank"
+                            rel="nofollow noopener">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.
+                    </p>
+                    <p></p>
+                    <h5>Drittlandtransfer:</h5>
+                    <p>Die erhobenen Daten werden ggfs. in folgende Drittländer übertragen: </p>
+                    <p>USA</p>
+                    <p>Folgende Datenschutzgarantien liegen vor: </p>
+                    <p></p>
+                    <h5>Verwendung von Google Analytics</h5>
+                    <p>Soweit Sie ihre Einwilligung gegeben haben, wird auf dieser Website Google Analytics eingesetzt,
+                        ein
+                        Webanalysedienst der Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA
+                        (nachfolgend: „Google“). Google Analytics verwendet sog. „Cookies“, also Textdateien, die auf
+                        Ihrem
+                        Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie
+                        ermöglichen.
+                        Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite werden in der
+                        Regel
+                        an einen Server von Google in den USA übertragen und dort gespeichert. Aufgrund der Aktivierung
+                        der
+                        IP-Anonymisierung auf diesen Webseiten, wird Ihre IP-Adresse von Google jedoch innerhalb von
+                        Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den
+                        Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an
+                        einen
+                        Server von Google in den USA übertragen und dort gekürzt. Die im Rahmen von Google Analytics von
+                        Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.
+                    </p>
+                    <p>Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter <a
+                            href="https://www.google.com/analytics/terms/de.html und unter https://policies.google.com/?hl=de"
+                            rel="noopener" target="_blank">https://www.google.com/analytics/terms/de.html und unter
+                            https://policies.google.com/?hl=de</a>. </p>
+                    <p>Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre
+                        Nutzung
+                        der Webseite auszuwerten, um Reports über die Webseitenaktivitäten zusammenzustellen und um
+                        weitere
+                        mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem
+                        Webseitenbetreiber zu erbringen. </p>
+                    <p>Die von uns gesendeten und mit Cookies, Nutzerkennungen (z. B. User-ID) oder Werbe-IDs
+                        verknüpften
+                        Daten werden nach 14 Monaten automatisch gelöscht. Die Löschung von Daten, deren
+                        Aufbewahrungsdauer
+                        erreicht ist, erfolgt automatisch einmal im Monat.</p>
+                    <h5>Widerruf der Einwilligung:</h5>
+                    <p>Sie können das Tracking durch Google Analytics auf unserer Website unterbinden, indem Sie <a
+                            title="Google Analytics Opt-Out-Cookie setzen"
+                            onClick="gaOptout();alert('Google Analytics wurde deaktiviert');" href="#">diesen Link
+                            anklicken</a>. Dabei wird ein Opt-out-Cookie auf Ihrem Gerät installiert. Damit wird die
+                        Erfassung durch Google Analytics für diese Website und für diesen Browser zukünftig verhindert,
+                        solange das Cookie in Ihrem Browser installiert bleibt.</p>
+                    <p>Sie können darüber hinaus die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer
+                        Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall
+                        gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können.
+                    </p>
+                    <p>Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der
+                        Webseite bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten
+                        durch Google verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin
+                        herunterladen und installieren: <a href="http://tools.google.com/dlpage/gaoptout?hl=de"
+                            rel="noopener" target="_blank">Browser Add On zur Deaktivierung von Google Analytics</a>.
+                    </p>
+                    <p></p>
+                    <h5>Verwendung von Scriptbibliotheken (Google Webfonts)</h5>
+                    <p>Um unsere Inhalte browserübergreifend korrekt und grafisch ansprechend darzustellen, verwenden
+                        wir
+                        auf dieser Website „Google Web Fonts“ der Google LLC (1600 Amphitheatre Parkway, Mountain View,
+                        CA
+                        94043, USA; nachfolgend „Google“) zur Darstellung von Schriften.</p>
+                    <p>Weitere Informationen zu Google Web Fonts finden Sie unter <a
+                            href="https://developers.google.com/fonts/faq" rel="noopener nofollow"
+                            target="_blank">https://developers.google.com/fonts/faq</a> und in der Datenschutzerklärung
+                        von
+                        Google: <a href="https://www.google.com/policies/privacy/" rel="noopener nofollow"
+                            target="_blank">https://www.google.com/policies/privacy/</a>.</p>
+                    <p></p>
+                    <h5>Eingebettete YouTube-Videos</h5>
+                    <p>Auf unserer Website betten wir YouTube-Videos ein. Betreiber der entsprechenden Plugins ist die
+                        YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA (nachfolgend „YouTube“). Die YouTube,
+                        LLC
+                        ist einer Tochtergesellschaft der Google LLC, 1600 Amphitheatre Pkwy, Mountain View, CA 94043,
+                        USA
+                        (nachfolgend „Google“). Wenn Sie eine Seite mit dem YouTube-Plugin besuchen, wird eine
+                        Verbindung zu
+                        Servern von YouTube hergestellt. Dabei wird YouTube mitgeteilt, welche Seiten Sie besuchen. Wenn
+                        Sie
+                        in Ihrem YouTube-Account eingeloggt sind, kann YouTube Ihr Surfverhalten Ihnen persönlich
+                        zuzuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem YouTube-Account ausloggen. </p>
+                    <p>Wird ein YouTube-Video gestartet, setzt der Anbieter Cookies ein, die Hinweise über das
+                        Nutzerverhalten sammeln. </p>
+                    <p>Weitere Informationen zu Zweck und Umfang der Datenerhebung und ihrer Verarbeitung durch YouTube
+                        erhalten Sie in den Datenschutzerklärungen des Anbieters, Dort erhalten Sie auch weitere
+                        Informationen zu Ihren diesbezüglichen Rechten und Einstellungsmöglichkeiten zum Schutze Ihrer
+                        Privatsphäre (<a
+                            href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). </p>
+                    <h5>Widerruf der Einwilligung:</h5>
+                    <p>Vom Anbieter wird derzeit keine Möglichkeit für einen einfachen Opt-out oder ein Blockieren der
+                        Datenübertragung angeboten. Wenn Sie eine Nachverfolgung Ihrer Aktivitäten auf unserer Website
+                        verhindern wollen, widerrufen Sie bitte im Cookie-Consent-Tool Ihre Einwilligung für die
+                        entsprechende Cookie-Kategorie oder alle technisch nicht notwendigen Cookies und
+                        Datenübertragungen.
+                        In diesem Fall können Sie unsere Website jedoch ggfs. nicht oder nur eingeschränkt nutzen.</p>
+                    <p></p>
+                    <h5>SSL-Verschlüsselung</h5>
+                    <p>Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden wir dem aktuellen Stand
+                        der
+                        Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.</p>
+                    <p></p>
+                    <hr>
+                    <h5>Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO</h5>
+                    <h5>Einzelfallbezogenes Widerspruchsrecht</h5>
+                    <p>Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit
+                        gegen
+                        die Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund Art. 6 Abs. 1 lit. f
+                        DSGVO
+                        (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen;
+                        dies
+                        gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO.</p>
+                    <p>Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei
+                        denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre
+                        Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung,
+                        Ausübung oder Verteidigung von Rechtsansprüchen.</p>
+                    <h5>Empfänger eines Widerspruchs</h5>
+                    <p>Stefan Avramescu</p>
+                    <a data-name="hello" data-domain="madlove" data-tld="games" href="#" class="cryptedmail"
+                        onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
+                    <hr>
+                    <h5>Änderung unserer Datenschutzbestimmungen</h5>
+                    <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen
+                        rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der
+                        Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten
+                        Besuch
+                        gilt dann die neue Datenschutzerklärung.</p>
+                    <h5>Fragen an den Datenschutzbeauftragten</h5>
+                    <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail.</p>
+                    <p></p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
